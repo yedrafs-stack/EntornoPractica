@@ -6,6 +6,7 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.util.ArrayList;
 
 public class Controlador extends WindowAdapter implements ActionListener, KeyListener
 {
@@ -15,6 +16,8 @@ public class Controlador extends WindowAdapter implements ActionListener, KeyLis
 	Ticket vistaTicket;
 	Confirmacion vistaConfi;
 	Agradecimiento vistaFinal;
+	
+	ArrayList<String> tabla = new ArrayList<>();
 
 	public Controlador(Modelo modelo, MenuPrincipal vistaMP)
 	{
@@ -45,11 +48,12 @@ public class Controlador extends WindowAdapter implements ActionListener, KeyLis
 		{
 			if(e.getSource().equals(vistaMP.btnInfo))
 			{
-				
-				
 				this.vistaInfo= new Informacion();//PARA QUE SE ABRA LA VENTANA
 				this.vistaInfo.ventana.addWindowListener(this);
 				vistaMP.ventana.setVisible(false);//PARA QUE SE CIERRE LA OTRA
+				int choiceEvento = 1;
+				tabla = modelo.obtenerTabla(choiceEvento);
+				System.out.println(tabla.get(0)); 
 			}
 			else if(e.getSource().equals(vistaMP.btnTicket))
 			{
