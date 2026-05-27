@@ -13,8 +13,6 @@ public class Informacion
 	{
 		ventana.setLayout(new FlowLayout());
 		ventana.setSize(275,210);
-		
-		choInfo.add("Selecciona un Evento");
 		ventana.add(choInfo);
 
 		ventana.setResizable(true);		
