@@ -5,7 +5,7 @@ public class Principal
 
 	public static void main(String[] args)
 	{
-		new Controlador(new Modelo(), new MenuPrincipal());
+		new Controlador(new Modelo(), new VistaMenuPrincipal());
 	}
 
 }

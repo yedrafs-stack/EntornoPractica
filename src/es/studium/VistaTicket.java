@@ -7,7 +7,7 @@ import java.awt.Frame;
 import java.awt.Label;
 import java.awt.TextField;
 
-public class Ticket
+public class VistaTicket
 {
 	Frame ventana = new Frame("Información de Eventos");
 	Choice choEvento = new Choice();
@@ -25,7 +25,7 @@ public class Ticket
 
 
 	
-	public Ticket()
+	public VistaTicket()
 	{
 		ventana.setLayout(new FlowLayout());
 		ventana.setSize(275,210);

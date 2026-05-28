@@ -5,7 +5,7 @@ import java.awt.FlowLayout;
 import java.awt.Frame;
 import java.awt.Label;
 
-public class Confirmacion
+public class VistaConfirmacion
 {
 	Frame ventana = new Frame("Confirmación de Facturas");
 	Label lblResumen = new Label("Resumen del evento seleccionado:");
@@ -15,7 +15,7 @@ public class Confirmacion
 	Button btnPago = new Button("Confirmar y Pagar");
 	Button btnCancelar = new Button("Cancelar");
 
-	public Confirmacion()
+	public VistaConfirmacion()
 	{
 		ventana.setLayout(new FlowLayout());
 		ventana.setSize(275,210);

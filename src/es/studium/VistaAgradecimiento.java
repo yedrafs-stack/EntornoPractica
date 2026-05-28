@@ -5,13 +5,13 @@ import java.awt.FlowLayout;
 import java.awt.Frame;
 import java.awt.Label;
 
-public class Agradecimiento
+public class VistaAgradecimiento
 {
 	Frame ventana = new Frame("Final");
 	Label lblMensaje = new Label("Gracias por su compra.");
 	Button btnAcpetar = new Button("Aceptar");
 	
-	public Agradecimiento()
+	public VistaAgradecimiento()
 	{
 		ventana.setLayout(new FlowLayout());
 		ventana.setSize(275,210);
